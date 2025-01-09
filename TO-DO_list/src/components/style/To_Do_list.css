@@ -1,0 +1,99 @@
+/* General container styling */
+.todo-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Title */
+h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.task-input {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.task-input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Add btn */
+.add-btn {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Task List Styling */
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+.task-item {
+    padding: 0.8rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Css for task when it's status is completed */
+.task-item.completed{
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.task-item span {
+    cursor: pointer;
+}
+
+.delete-btn {
+    padding: 0.4rem 0.8rem;
+    color: #fff;
+    font-size: 0.87rem;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover{
+    background-color: #a71d2a;
+}
