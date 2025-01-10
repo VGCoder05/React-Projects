@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(to right, #DE005D, #8360c3);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-display {
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-val {
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* btn Styling */
+.btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Style for all btn */
+.btn {
+    padding: 1rem 1.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.increment {
+    background-color: #FF6384;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(255, 99, 132, 0.3);
+}
+
+.increment:hover {
+    background-color: #E55075;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(255, 99, 132, 0.4);
+}
+
+.decrement {
+    background-color: #6A1B9A;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(255, 99, 132, 0.3);
+}
+
+.decrement:hover{
+    background-color: #501287;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(255, 99, 132, 0.4);
+}
+
+.reset {
+    background-color: #007BFF;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(255, 99, 132, 0.3);
+}
+
+.reset:hover{
+    background-color: #0056B3;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(255, 99, 132, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Finished */
+ /* Thanks for Watching */
+ /* Comment any suggestions and project you want to see in next video */
