@@ -1,0 +1,100 @@
+/* General Container Styling */
+.container {
+    height: 100%;
+    width: 100%;
+
+    background: linear-gradient(to right, #DE005D, #8360c3);
+    /* Gradient background */
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Counter Display Section */
+.counter-display {
+    padding: 20px 40px;
+    margin-bottom: 30px;
+
+
+    background: rgba(255, 255, 255, 0.1);
+    /* Semi-transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter-value {
+    margin: 0;
+    font-size: 64px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Button Group Styling */
+.button-group {
+    display: flex;
+    gap: 15px;
+}
+
+/* Common Button Styling */
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Increment Button */
+.increment {
+    background: #FF6384;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(255, 99, 132, 0.3);
+}
+
+.increment:hover {
+    background: #E55075;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(255, 99, 132, 0.4);
+}
+
+/* Decrement Button */
+.decrement {
+    background: #6A1B9A;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(106, 27, 154, 0.3);
+}
+
+.decrement:hover {
+    background: #501287;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(106, 27, 154, 0.4);
+}
+
+/* Reset Button */
+.reset {
+    background: #007BFF;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.3);
+}
+
+.reset:hover {
+    background: #0056B3;
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+}

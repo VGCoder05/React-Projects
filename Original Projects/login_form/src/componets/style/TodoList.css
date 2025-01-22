@@ -1,0 +1,111 @@
+/* General container styling */
+.todo-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Input container */
+.input-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.task-input {
+  flex: 1;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Add button */
+.add-button {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Task list styling */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  
+  
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item input[type="checkbox"]{
+  align-self: flex-start;
+}
+
+.task-content{
+  margin: 0 .5rem;
+  width: 100%;
+  overflow: auto;
+  cursor: pointer;
+}
+
+.task-item.completed span{
+  text-decoration: line-through;
+  color: #777;
+}
+
+/* Delete button */
+.delete-button {
+  padding: 0.4rem 0.8rem;
+  width: 25%;
+
+  font-size: 0.875rem;
+  color: #fff;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  align-self: flex-start;
+}
+
+.delete-button:hover {
+  background-color: #a71d2a;
+}

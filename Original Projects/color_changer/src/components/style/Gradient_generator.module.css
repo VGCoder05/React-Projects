@@ -1,0 +1,129 @@
+:root{
+    --body-bg: linear-gradient(to right, #DE005D, #8360c3);
+    --secondary-color: #2196f3;
+    --copy-btn-color: #ff9800;
+    --copy-btn-hover-color: #fb8c00;
+    --refresh-btn-color: #2196f3;
+    --refresh-btn-hover-color: #1e88e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--body-bg);
+}
+
+.gradientContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.gradientDisplay {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.directionSelect{
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    outline: none;
+}
+
+.directionSelect:hover {
+    border: 1px solid var(--secondary-color);
+    cursor: pointer;
+}
+
+.colorSelected {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.colorInputOverlay {
+    width: 2rem;
+    height: 2rem;
+    background: #000;
+    border: 2px solid;
+}
+
+.colorInput {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.addColorBtn {
+    padding: .2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #bbb;
+    border: 2px dashed #bbb;
+    border-radius: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.addColorBtn:hover {
+    border: 2px dashed var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.cssStyleDisplay {
+    font-family: monospace;
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    user-select: none;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.actionBtn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.refreshBtn {
+    background: var(--refresh-btn-color);
+    color: #fff;
+}
+
+.refreshBtn:hover {
+    background: var(--refresh-btn-hover-color);
+}
+
+.copyBtn {
+    background: var(--copy-btn-color);
+    color: #fff;
+}
+
+.copyBtn:hover {
+    background: var(--copy-btn-hover-color);
+}

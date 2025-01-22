@@ -1,0 +1,91 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.App {
+    padding: 20px;
+    max-width: 600px;
+    margin: 50px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Accordion Styles */
+.accordion {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+/* Accordion Item */
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+/* Header Styles */
+.accordion-header {
+    padding: 15px 20px;
+    background: #DE005D;
+    /* Primary color */
+    color: #ffffff;
+    /* White text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: #c10051;
+    /* Darker shade on hover */
+}
+
+/* Icon Styles (+/-) */
+.accordion-header span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon when active */
+.accordion-header.active span {
+    transform: rotate(180deg);
+}
+
+/* Content Styles */
+.accordion-content {
+    padding: 15px 20px;
+    background: #fef7fa;
+    /* Light pink shade for contrast */
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    animation: fadeIn 1s ease;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        /* transform: translateY(-10px); */
+    }
+
+    to {
+        opacity: 1;
+        /* transform: translateY(0); */
+    }
+}
